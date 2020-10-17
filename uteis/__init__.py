@@ -11,8 +11,8 @@ def dimensao(dim):
     monitor_altura = dim.winfo_reqheight()
 
     # OBTENDO LARGURA/ALTURA DO MONITOR E DA JANELA
-    posicao_horizontal = int(dim.winfo_screenwidth()/2 - monitor_largura/2)
-    posicao_horizontal = int(dim.winfo_screenheight()/2 - monitor_altura/2)
+    posicao_horizontal = int(dim.winfo_screenwidth()/8 - monitor_largura/8)
+    posicao_horizontal = int(dim.winfo_screenheight()/8 - monitor_altura/8)
 
     # POSICIONANDO NO CENTRO DO MONITOR
     dim.geometry(f"+{posicao_horizontal}+{posicao_horizontal}")
