@@ -6,16 +6,14 @@ from uteis import *
 
 root = Tk()
 root.title("Idioms' Glossary")
+root.configure(background='#DCDAD5')
 dimensao(root)
 
 style = ThemedStyle(root)
-style.set_theme('breeze')
+style.set_theme('clam')
 
 bt_style = ttk.Style()
-bt_style.configure('estilo_bt.TButton',
-                   font=('Agency FB', 24, 'bold'),
-                   relief=RIDGE,
-                   borderwidth=0) 
+bt_style.configure('estilo_bt.TButton', font=('Agency FB', 24, 'bold'), relief='flat') 
 
 # IMAGENS         
 bt_img_america_do_norte = PhotoImage(file='imgs/continentes/continentes_contornados/continent_america_do_norte.png')
@@ -68,7 +66,7 @@ bt_europa = ttk.Button(root,
                       style='estilo_bt.TButton', width=20)
 
 # BOTÕES CONTINENTES
-bt_america_do_norte.grid(row=0, column=0, ipad=5)
+bt_america_do_norte.grid(row=0, column=0)
 bt_europa.grid(row=0, column=1)
 bt_asia.grid(row=0, column=2)
 bt_america_do_sul.grid(row=1, column=0)
